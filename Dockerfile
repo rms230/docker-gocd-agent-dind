@@ -60,7 +60,7 @@ RUN \
   adduser -D -u ${UID} -s /bin/bash -G root go && \
     apk add --no-cache cyrus-sasl cyrus-sasl-plain sudo && \
   apk --no-cache upgrade && \
-  apk add --no-cache nss git mercurial subversion openssh-client bash curl procps npm && \
+  apk add --no-cache nss git mercurial subversion openssh-client bash curl procps npm alpine-sdk && \
   # install glibc and zlib for adoptopenjdk && \
   # See https://github.com/AdoptOpenJDK/openjdk-docker/blob/ce8b120411b131e283106ab89ea5921ebb1d1759/8/jdk/alpine/Dockerfile.hotspot.releases.slim#L24-L54 && \
     apk add --no-cache --virtual .build-deps curl binutils && \
