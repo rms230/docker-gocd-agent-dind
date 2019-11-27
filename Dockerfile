@@ -103,8 +103,8 @@ RUN \
 
 RUN curl "https://d1vvhvl2y92vvt.cloudfront.net/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip" && \
 	unzip awscliv2.zip && \
-	./aws/install
-	
+	./aws/install -b
+
 ADD docker-entrypoint.sh /
 
 
